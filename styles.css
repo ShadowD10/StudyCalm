@@ -1,0 +1,188 @@
+body {
+    padding-top: 56px; /* Altura del navbar superior */ 
+    background-color: #100F1B;   
+}
+.static-effect {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+.static-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAwAB/pgEmrkAAAAASUVORK5CYII=') repeat;
+    opacity: 0.5; /* Ajusta la opacidad para el efecto deseado */
+}
+.custom-navbar-bg {
+    background-color: #7386C6; /* Color de fondo personalizado */
+}
+.sidebar {
+    position: fixed;
+    top: 56px; /* Altura del navbar superior */
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 10vw; /* Ancho de la barra lateral: 10% del ancho de la pantalla */
+    padding: 0; /* Eliminamos el padding adicional */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+}
+.sidebar nav {
+    height: 100%;
+}
+.nav-item {
+    flex: 1; /* Cada elemento toma el mismo espacio */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centramos horizontalmente */
+    border-bottom: 1px solid white; /* Agrega una línea blanca debajo de cada elemento */
+}
+.nav-item:last-child {
+    border-bottom: none; /* Quitar el borde del último elemento */
+}
+.main-content {
+    margin-left: 10vw; /* Dejar espacio para la barra lateral */
+    padding: 20px;
+    background-image: url(img/noche.png);
+    background-repeat: no-repeat;
+    background-color: #100F1B;
+}
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background::before, .background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/noche.png); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background::after {
+    top: 100%;
+    transform: rotate(180deg);
+}
+.sidebar-sticky {
+    height: calc(100vh - 56px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar-bg {
+    background-color: #7386C6; /* Cambia este color al que prefieras */
+}
+.sidebar .nav-link {
+    color: #000000; /* Cambia este color al que prefieras */
+    font-weight: bold; /* Hacer el texto en negrita */
+}
+.sidebar .nav-item:hover {
+    background-color: #007bff; /* Cambia este color al que prefieras para el hover */
+}
+.gradient-text {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold; /* Hacer el texto en negrita */
+    background: linear-gradient(45deg, #264cca, #fa7391);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.icon-box {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+.content-box {
+    padding: 2rem;
+    border: 1px solid #0d6efd;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.content-box:hover {
+    transform: scale(1.05);
+}
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.full-height {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.openSans{
+    font-family: 'Open Sans', sans-serif;
+}
+.gagalin{
+    font-family: 'Gagalin', fantasy;
+}
+.gagalinCBold{
+    font-family: 'Gagalin', cursive;
+    font-weight: bold;
+}
+.fondoEstres{
+    background-image: url(img/estres-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.equal-height .row {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Alinea el contenido verticalmente */
+}
+.equal-height .row > .col {
+    display: flex;
+    flex: 1;
+    align-items: center; /* Alinea el contenido verticalmente */
+}
+.equal-height img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+.video-container {
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    position: relative;
+}
+.video-container.vertical {
+    padding-bottom: 177.77%; /* 9:16 ratio */
+}
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
