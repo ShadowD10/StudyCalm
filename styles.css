@@ -1,6 +1,6 @@
 body {
     padding-top: 56px; /* Altura del navbar superior */ 
-    background-color: #100F1B;   
+    background-image: url(img/noche_cont.png);   
 }
 .static-effect {
     width: 100%;
@@ -92,6 +92,7 @@ body {
 }
 .sidebar .nav-item:hover {
     background-color: #007bff; /* Cambia este color al que prefieras para el hover */
+    cursor:pointer;
 }
 .gradient-text {
     display: inline-block;
@@ -135,6 +136,25 @@ body {
     display: flex;
     align-items: center;
 }
+.full-height1 {
+    height: 100vh;
+}
+.verticalCenter {    
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.alineacionCentradaVert{
+    display: flex;
+    align-items: center;
+}
+.imagen-redondeada {
+    width: max-content; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Ajusta el radio de los bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados sean visibles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave (opcional) */
+}
 .openSans{
     font-family: 'Open Sans', sans-serif;
 }
@@ -147,6 +167,12 @@ body {
 }
 .fondoEstres{
     background-image: url(img/estres-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondoComun{
+    background-image: url(img/pideAyuda.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
