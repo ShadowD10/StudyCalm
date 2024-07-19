@@ -38,6 +38,14 @@ body {
 .sidebar nav {
     height: 100%;
 }
+.objeto-fijo {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    background-color: #ffcc00;
+    padding: 10px;
+    border: 1px solid #000;
+}
 .nav-item {
     flex: 1; /* Cada elemento toma el mismo espacio */
     display: flex;
@@ -176,6 +184,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.objeto-fijo {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    background-color: #00000000;
+    padding: 10px;
+    border: 1px solid #00000000;
 }
 .equal-height {
     display: flex;
